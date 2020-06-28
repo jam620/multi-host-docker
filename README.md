@@ -17,7 +17,7 @@ En el siguiente articulo les explicaré como realizar una configuración básica
 
    El siguiente diagrama nos permite utilizar un Nginx  [Proxy](https://github.com/nginx-proxy/nginx-proxy "Github"),  que repartirá las peticiones de los subdominios a los respectivos contenedores con wordpress y Ghost. El contenedor de lets encrypt lo veremos en el archivo docker-compose.yml
 
-   <img src="https://github.com/jam620/multi-host-docker/tree/master/img/1.png" alt="1" style="zoom:50%;" />
+   <img src="./img/1.png" alt="1" style="zoom:50%;" />
 
    Fuente: Propia, el contenedor de lets encrypt no esta reflejado en el gráfico dado su utilidad es para generar el certificado únicamente.
 
@@ -104,17 +104,17 @@ En el siguiente articulo les explicaré como realizar una configuración básica
    docker-compose up -d
    ```
 
-   ![2](https://github.com/jam620/multi-host-docker/tree/master/img/2.png)
+   ![2](./img/2.png)
 
    Verificamos que los contenedores hayan iniciado correctamente
 
-   ![3](https://github.com/jam620/multi-host-docker/tree/master/img/3.png)
+   ![3](./img/3.png)
 
    
 
    Observamos de igual manera los directorios creados por el docker-compose.yml 
 
-   <img src="https://github.com/jam620/multi-host-docker/tree/master/img/4.png" alt="4" style="zoom:50%;" />
+   <img src="./img/4.png" alt="4" style="zoom:50%;" />
 
    
 
@@ -122,19 +122,19 @@ En el siguiente articulo les explicaré como realizar una configuración básica
 
 * Contenedor Wordpress con el dominio https://web.utponline.xyz
 
-  <img src="https://github.com/jam620/multi-host-docker/tree/master/img/5.png" alt="5" style="zoom:50%;" />
+  <img src="./img/5.png" alt="5" style="zoom:50%;" />
 
   
 
 * Contenedor con blog ghost y el dominio http://ghost.utponline.xyz
 
-  <img src="https://github.com/jam620/multi-host-docker/tree/master/img/6.png" alt="6" style="zoom:50%;" />
+  <img src="./img/6.png" alt="6" style="zoom:50%;" />
 
 
 
 ​	Certificado generado con lets encrypt 
 
-​	<img src="https://github.com/jam620/multi-host-docker/tree/master/img/7.png" alt="7" style="zoom: 33%;" />
+​	<img src="./img/7.png" alt="7" style="zoom: 33%;" />
 
 Hemos automatizado la creación de certificados, además de utilizar un proxy que administra las peticiones a los contenedores con diversas tecnologías o herramientas web, adicionalmente se podría añadir  a esta arquitectura un contenedor con gitlab, jenkins, entre otros.
 
